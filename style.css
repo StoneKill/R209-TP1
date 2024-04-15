@@ -41,9 +41,6 @@ hr {
     border: 1px solid whitesmoke;
     margin-left: initial;
     margin-right: initial;
-    padding: 0;
-    box-sizing: 0;
-
 }
 
 a {
@@ -69,6 +66,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
+    justify-content: center;
+    margin-top: 3em;
 }
 
 @media all and (max-width: 760px) {
