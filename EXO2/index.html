@@ -13,42 +13,41 @@
         <h1>Formulaire de Contact</h1>
     </header>
     <main>
-        <form action="" method="post">
+        <form method="post">
             <label for="pseudo">Votre Pseudo *</label>
-            <input type="text" name="pseudo" placeholder="Votre pseudo" required>
+            <input id="pseudo" type="text" name="pseudo" placeholder="Votre pseudo" required>
 
             <label for="mdp">Votre Mot de passe *</label>
-            <input type="password" name="mdp" placeholder="Votre mot de passe" required>
+            <input id="mdp" type="password" name="mdp" placeholder="Votre mot de passe" required>
 
             <label for="email">Votre e-mail *</label>
-            <input type="email" name="email" placeholder="Votre email" required>
+            <input id="email" type="email" name="email" placeholder="Votre email" required>
 
             <label for="obj">Objet du message *</label>
-            <select name="obj" id="" required>
-                <option value="question" checked>J'ai une question chef</option>
+            <select id="obj" name="obj" required size="4">
+                <option value="question" selected>J'ai une question chef</option>
                 <option value="suggestion">Je veux te proposer un truc</option>
                 <option value="probleme">J'ai un pb</option>
                 <option value="autre">Autre</option>
             </select>
 
             <label for="message">Votre message *</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
 
-            <label for="niv_urgent">Niveau d'urgence *</label>
-            <div class="champs">
-                <fieldset>
-                    <input type="radio" name="niv_urgent" value="urgent">
+            <div class="niv_urgent">
+                <fieldset id="niv_urgent">
+                    <input id="urgent_urgent" type="radio" name="niv_urgent" value="urgent">
                     <label for="urgent_urgent">ALED !!!</label>
 
-                    <input type="radio" name="niv_urgent" value="mid-urgent">
-                    <label for="mid_urgent">C'est urgent</label>
+                    <input id="mid-urgent" type="radio" name="niv_urgent" value="mid-urgent">
+                    <label for="mid-urgent">C'est urgent</label>
 
                     <input type="radio" name="niv_urgent" id="low-urgent" checked>
-                    <label for="low_urgent">Cela peut attendre</label>
+                    <label for="low-urgent">Cela peut attendre</label>
                 </fieldset>
             </div>
             <div>
-                <input type="checkbox" name="rgpf" required>
+                <input id="rgpd" type="checkbox" name="rgpd" required>
                 <label for="rgpd">J'ai lu et tout le truc qu'on lit tous</label>
             </div>
             <button type="submit" id="submit">Envoyer</button>
