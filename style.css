@@ -18,8 +18,9 @@ header {
 
 main {
     margin: auto;
-    margin-top: 5em;
-    width: 95%;
+    margin-top: 2em;
+    width: 90%;
+    line-height: 1.5em;
 }
 
 p,
@@ -33,6 +34,7 @@ nav {
 
 nav {
     scale: 1.4;
+    margin-right: 15px;
 }
 
 hr {
@@ -56,6 +58,7 @@ a:hover {
 footer {
     text-align: center;
     line-height: 0.9em;
+    margin-bottom: 1em;
 }
 
 #teal {
@@ -63,5 +66,13 @@ footer {
 }
 
 #image {
-    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+@media all and (max-width: 760px) {
+    #image {
+        scale: 0.5;
+    }
 }
